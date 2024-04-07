@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Play Tag') }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    @vite('resources/js/app.js')
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -21,7 +16,8 @@
                 <span>{{ __('Log in') }}</span>
             </a>
             <a href="/" class="mt-2">
-                <img class="me-2 svg-pokeball" src="{{ asset('pokeball.svg') }}" alt="logo" width="50" height="50">
+                <img class="me-2 svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50"
+                    height="50">
             </a>
             <a href="{{ route('register') }}" type="submit" class="button-17">
                 <span>{{ __('Register') }}</span>

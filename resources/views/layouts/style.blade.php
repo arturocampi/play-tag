@@ -1,4 +1,6 @@
 <style>
+
+    /* FONTS */
     .oswald {
         font-family: 'Oswald', sans-serif !important;
     }
@@ -9,13 +11,18 @@
         font-style: normal !important;
     }
 
-    .svg-pokeball {
-        width: 50px !important;
+    /* ANIMATIONS */
+    .size-up-animation{
         transition: transform 0.3s ease;
     }
 
-    .svg-pokeball:hover {
+    .size-up-animation:hover{
         transform: scale(1.2);
+
+    }
+
+    .svg-pokeball {
+        width: 50px !important;
     }
 
     .background-custom {
