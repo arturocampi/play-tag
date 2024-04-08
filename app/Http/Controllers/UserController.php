@@ -63,12 +63,12 @@ class UserController extends Controller
     {
         // User::create($request->all()); Mass assignment
         $request->validate([
-            'nickname' => ['required', 'string', 'max:255', 'unique:users'],
+            'username' => ['required', 'string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
         
         $user = User::create([
-            'nickname' => $request->nickname,
+            'username' => $request->username,
             'password' => Hash::make($request->password),
         ]);
 
@@ -110,7 +110,7 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $request->validate([
-            'nickname' => ['required', 'string', Rule::unique('users')->ignore($user->nickname, 'nickname'), 'max:255']
+            'username' => ['required', 'string', Rule::unique('users')->ignore($user->username, 'username'), 'max:255']
         ]);
         // Update user data
         $user->update($request->all());

@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'role_id' => '1',
-            'nickname' => 'admin',
+            'username' => 'admin',
             'password' => Hash::make('coliseum'),
             'created_at' => Date::now(),
         ]);

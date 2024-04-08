@@ -18,7 +18,7 @@ return new class extends Migration
                 ->constrained('roles')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->string('nickname')->unique();
+            $table->string('username')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

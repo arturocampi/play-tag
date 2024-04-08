@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 
 <body class="background-custom">
@@ -22,3 +21,4 @@
     </div>
 </body>
 @endsection
+@include('layouts.style')

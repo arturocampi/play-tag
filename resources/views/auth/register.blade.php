@@ -16,12 +16,12 @@
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="mb-3">
-                                <label class="mb-2 text-muted" for="nickname">{{ __('Nickname') }}</label>
-                                <input id="nickname" type="nickname"
-                                    class="form-control @error('nickname') is-invalid @enderror" name="nickname"
-                                    value="{{ old('nickname') }}" required autocomplete="nickname" autofocus>
+                                <label class="mb-2 text-muted" for="username">{{ __('username') }}</label>
+                                <input id="username" type="username"
+                                    class="form-control @error('username') is-invalid @enderror" name="username"
+                                    value="{{ old('username') }}" required autocomplete="username" autofocus>
 
-                                @error('nickname')
+                                @error('username')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
