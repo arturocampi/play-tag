@@ -18,10 +18,10 @@
                     <span>{{ __('Log in') }}</span>
                 </a>
                 <a href="/" class="mt-2">
-                    <img class="me-2 svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50" height="50">
+                    <img class="svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50" height="50">
                 </a>
                 <a href="{{ route('register') }}" type="submit" class="button-17">
-                    <span>{{ __('Register') }}</span>
+                    <span>{{ __('Registrarse') }}</span>
                 </a>
             </div>
         </nav>

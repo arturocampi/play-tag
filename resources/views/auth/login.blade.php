@@ -15,7 +15,7 @@
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="mb-3">
-                                <label class="mb-2 text-muted" for="username">{{ __('username') }}</label>
+                                <label class="mb-2 text-muted" for="username">{{ __('Nombre de usuario') }}</label>
                                 <input id="username" type="username"
                                     class="form-control @error('username') is-invalid @enderror" name="username"
                                     value="{{ old('username') }}" required autocomplete="username" autofocus>
@@ -29,7 +29,7 @@
 
                             <div class="mb-3">
                                 <div class="mb-2 w-100">
-                                    <label class="text-muted" for="password">{{ __('Password') }}</label>
+                                    <label class="text-muted" for="password">{{ __('Contraseña') }}</label>
                                 </div>
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
@@ -46,7 +46,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                         {{old('remember') ? 'checked' : '' }}>
-                                    <label for="remember" class="form-check-label"> {{ __('Remember Me') }}</label>
+                                    <label for="remember" class="form-check-label"> {{ __('Guardar credenciales') }}</label>
                                 </div>
                                 <button type="submit" class="button-28">
                                     {{ __('Login') }}
@@ -56,7 +56,7 @@
                     </div>
                     <div class="card-footer py-3 border-0">
                         <div class="text-center">
-                            <a href="{{ route('register') }}" class="text-dark">{{__('Create account')}}</a>
+                            <a href="{{ route('register') }}" class="text-dark">{{__('Registrarse')}}</a>
                         </div>
                     </div>
                 </div>

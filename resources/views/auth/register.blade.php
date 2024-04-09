@@ -16,7 +16,7 @@
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="mb-3">
-                                <label class="mb-2 text-muted" for="username">{{ __('username') }}</label>
+                                <label class="mb-2 text-muted" for="username">{{ __('Nombre de usuario') }}</label>
                                 <input id="username" type="username"
                                     class="form-control @error('username') is-invalid @enderror" name="username"
                                     value="{{ old('username') }}" required autocomplete="username" autofocus>
@@ -30,7 +30,7 @@
 
                             <div class="mb-3">
                                 <div class="mb-2 w-100">
-                                    <label class="text-muted" for="password">{{ __('Password') }}</label>
+                                    <label class="text-muted" for="password">{{ __('Contraseña') }}</label>
                                 </div>
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
@@ -47,7 +47,7 @@
                             <div class="mb-3">
                                 <div class="mb-2 w-100">
                                     <label for="password-confirm" class="text-muted">{{
-                                        __('Confirm password') }}</label>
+                                        __('Confirmar contraseña') }}</label>
                                 </div>
                                 <input id="password-confirm" type="password" class="form-control"
                                     name="password_confirmation" required autocomplete="new-password">
@@ -57,7 +57,7 @@
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="button-28">
-                                        {{ __('Register') }}
+                                        {{ __('Registrarse') }}
                                     </button>
                                 </div>
                             </div>

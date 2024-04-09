@@ -18,7 +18,9 @@ Route::get('/', function () { return view('welcome');});
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::resource('users', UserController::class)->middleware('auth');
 
-URL::forceScheme('https');
+Route::get('/users/{locations}', [UserController::class, 'saveLocations'])->name('saveLocations');
+
+
 if (config('app.env') === 'production') {
     URL::forceScheme('https');
 }

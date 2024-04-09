@@ -1,5 +1,4 @@
 <style>
-
     /* FONTS */
     .oswald {
         font-family: 'Oswald', sans-serif !important;
@@ -12,13 +11,35 @@
     }
 
     /* ANIMATIONS */
-    .size-up-animation{
+    .size-up-animation {
         transition: transform 0.3s ease;
     }
 
-    .size-up-animation:hover{
+    .size-up-animation:hover {
         transform: scale(1.2);
 
+    }
+
+    body {
+        background-image: url('../files/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .red-dot {
+        position: absolute;
+        color: red;
+        font-size: 2rem;
+        pointer-events: none;
+    }
+
+    .image-container {
+        position: relative;
     }
 
     .svg-pokeball {

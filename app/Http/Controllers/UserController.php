@@ -129,5 +129,9 @@ class UserController extends Controller
         $user->delete();
         return redirect()->route('users.index');
     }
+
+    public function saveLocations($locations){
+        
+    }
     
 }
