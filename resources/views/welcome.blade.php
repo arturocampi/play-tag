@@ -13,14 +13,14 @@
 <body class="background-custom">
     <div class="container-fluid h-100 p-0">
         <nav class="navbar">
-            <div class="container d-flex justify-content-between mt-3">
-                <a href="{{ route('login') }}" type="submit" class="button-17">
+            <div class="container d-flex justify-content-between mt-1">
+                <a href="{{ route('login') }}" type="submit" class="button-17" style="width: 125px;">
                     <span>{{ __('Log in') }}</span>
                 </a>
-                <a href="/" class="mt-2">
+                <a href="/" class="text-center mt-2" style="width: 125px;">
                     <img class="svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50" height="50">
                 </a>
-                <a href="{{ route('register') }}" type="submit" class="button-17">
+                <a href="{{ route('register') }}" type="submit" class="button-17" style="width: 125px;">
                     <span>{{ __('Registrarse') }}</span>
                 </a>
             </div>

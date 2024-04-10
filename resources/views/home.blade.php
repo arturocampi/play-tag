@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
-<body class="background-customa">
-    <div class="container-fluid h-100 p-0">
+<body class="px-2 background-custom">
+    <div class="container-fluid h-100 px-2">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="d-flex justify-content-between">

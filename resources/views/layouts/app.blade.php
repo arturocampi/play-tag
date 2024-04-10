@@ -13,18 +13,18 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="background-custom">
     <nav class="navbar">
-        <div class="container d-flex justify-content-between mt-3">
+        <div class="container d-flex justify-content-between">
             @guest
-            <a href="{{ route('login') }}" type="submit" class="button-17">
+            <a href="{{ route('login') }}" type="submit" class="button-17" style="width: 125px;">
                 <span>{{ __('Log in') }}</span>
             </a>
-            <a href="/" class="mt-2">
+            <a href="/" class="text-center mt-2" style="width: 125px;">
                 <img class="svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50"
                 height="50">
             </a>
-            <a href="{{ route('register') }}" type="submit" class="button-17">
+            <a href="{{ route('register') }}" type="submit" class="button-17" style="width: 125px;">
                 <span>{{ __('Registrarse') }}</span>
             </a>
             @endguest
@@ -36,7 +36,7 @@
                 <img class="svg-pokeball size-up-animation" src="{{ asset('pokeball.svg') }}" alt="logo" width="50"
                 height="50">
             </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="button-17">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="button-17 mb-0">
                 @csrf
                 <a type="submit" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Salir') }}</a>
             </form>

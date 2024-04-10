@@ -20,11 +20,14 @@
 
     }
 
-    body {
-        background-image: url('../files/background.jpg');
+    .background-custom {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("{{ asset('background.jpg') }}");
+        background-attachment: fixed;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 50px;
     }
 
     .cursor-pointer {
@@ -44,15 +47,6 @@
 
     .svg-pokeball {
         width: 50px !important;
-    }
-
-    .background-custom {
-        overflow: hidden !important;
-        height: 100vh !important;
-        width: 100vw !important;
-        background-image: url("{{ asset('background.jpg') }}") !important;
-        background-attachment: fixed !important;
-        background-position: center !important;
     }
 
     .title {

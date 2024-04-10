@@ -3,9 +3,9 @@
 @section('content')
 
 <body class="background-custom">
-    <div class="container h-100">
-        <div class="row d-flex justify-content-md-center align-items-center h-100">
-            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+    <div class="mx-0 container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="mx-0 col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
                 <div class="text-center bebas-neue-regular">
                     <a class="text-decoration-none title" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">PLAY TAG</a>
                 </div>
