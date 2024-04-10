@@ -11,9 +11,9 @@
 @include('layouts.style')
 
 <body class="background-custom">
-    <div class="container-fluid h-100 p-0">
+    <div class="container-fluid h-100">
         <nav class="navbar">
-            <div class="container d-flex justify-content-between mt-1">
+            <div class="container d-flex justify-content-between">
                 <a href="{{ route('login') }}" type="submit" class="button-17" style="width: 125px;">
                     <span>{{ __('Log in') }}</span>
                 </a>
